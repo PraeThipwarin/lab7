@@ -1,9 +1,23 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
-}
+	char y;
+	if(x > 'A'&&x <= 'Z')
+	{
+		y = x-1;
+	}
+	else if(x == 'A')
+	{
+		y = 'Z';
+	}
+	else
+	{
+		y = '0';
+	}
+	return y;
+	}
 
 int main(){
 	//Test Case
